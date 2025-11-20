@@ -263,49 +263,7 @@ yesButton.addEventListener("click", () => {
   }, 5000);
 });
 
-noButton.addEventListener("click", () => {
-  const tl = new gsap.timeline();
-  gsap.to(".valentine-text, .buttons", {
-    display: "none",
-    opacity: 0,
-    duration: 0.5
-  });
-  gsap.to(".valentine-sad", {
-    display: "block",
-    opacity: 1,
-    duration: 0.5,
-    delay: 0.5
-  });
-  tl.to(".card", {
-    width: window.innerWidth < 420 ? window.innerWidth : 800,
-    height: 540,
-    duration: 1,
-    ease: "power2.in"
-  });
-  tl.to(".valentine-sad", {
-    width: "100%",
-    height: "100%",
-    duration: 0.3
-  });
-  tl.to(".sad", {
-    width: "90%",
-    height: "100%",
-    duration: 0.7
-  });
 
-  // confetti({
-  //     particleCount: 500,
-  //     spread: 150,
-  //     origin: { y: 0.6 },
-  // });
-  // setInterval(() => {
-  //     confetti({
-  //         particleCount: 500,
-  //         spread: 150,
-  //         origin: { y: 0.6 },
-  //     });
-  // }, 5000);
-});
 
 noButton.addEventListener("mouseover", () => {
   const minDisplacement = 100; // Minimum move distance
