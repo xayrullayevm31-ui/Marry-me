@@ -291,7 +291,7 @@ noButton.addEventListener("mouseover", () => {
     x: `+=${x}`, // Move relative to current position
     y: `+=${y}`,
     duration: 0.1,
-    delay: 0.002,
+    delay: 0.2,
     ease: "power2.out"
   });
 });
